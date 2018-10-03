@@ -7,7 +7,7 @@
 	}
 
 	$redirectURL = "https://fast-plains-22925.herokuapp.com/fb-callback.php";
-	$permissions = ['email'];
+	$permissions = ['email','user_birthday'];
 	$loginURL = $helper->getLoginUrl($redirectURL, $permissions);
 ?>
 <!doctype html>

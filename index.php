@@ -29,7 +29,7 @@
 						<tr>
 							<td>ID</td>
 							<td><?php echo $_SESSION['userData']['id'] ?></td>
-							<td><?php echo $_SESSION['userData']['birthday']?></td>
+							
 						</tr>
 						<tr>
 							<td>First Name</td>
@@ -44,6 +44,10 @@
 							<td>Email</td>
 							<td><?php echo $_SESSION['userData']['email'] ?></td>
 						</tr>
+						<tr>
+						<td><?php echo $_SESSION['userData']['birthday']?></td>
+						</tr>
+						
 					</tbody>
 				</table>
 			</div>

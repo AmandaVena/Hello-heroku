@@ -7,7 +7,8 @@
 	}
 
 	$redirectURL = "https://venatest.herokuapp.com/fb-callback.php";
-	$permissions = ['email'];
+	//$permissions = ['email','user_birthday'];
+	$permissions = array('email','user_birthday','user_location');
 	$loginURL = $helper->getLoginUrl($redirectURL, $permissions);
 ?>
 <!doctype html>

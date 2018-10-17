@@ -44,8 +44,8 @@
 							<td>Email</td>
 							<td><?php echo $_SESSION['userData']['email'] ?></td>
 						</tr>
-						<tr>
-						<td><?php echo $_SESSION['userData']['birthday']?></td>
+						<tr><td>Gender</td>
+						<td><?php echo $_SESSION['userData']['gender']?></td>
 						</tr>
 						
 					</tbody>

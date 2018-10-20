@@ -43,12 +43,7 @@
 						<tr>
 							<td>Email</td>
 							<td><?php echo $_SESSION['userData']['email'] ?></td>
-						</tr>
-						<tr>
-						<td>Gender</td>
-						<td><?php echo $_SESSION['userData']['gender']?></td>
-						</tr>
-						
+						</tr>						
 					</tbody>
 				</table>
 			</div>

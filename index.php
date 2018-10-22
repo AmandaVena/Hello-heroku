@@ -1,7 +1,7 @@
 <?php
 	session_start();
 
-	if (!isset($_SESSION['access_token'])) {
+	if (!isset($_SESSION['EAAGZBKXWG8gYBABgj1jdE7mSNOjaLrXmZCRGwGGg9X8IwUqHhSZAcGFMkOIAHtERISwd4ddyHctxvUbtBIOjdMtlDWnWnnnmG7neFkS4bnl0Sf5U4iVVTHLYCeoDW98ZCZCcgkMUnJKMoZATeX2idHWP0ZAREUn2siUD2GYH1OpUaz0aAJ1tKEJZBe8ZCRF56TvJpevDJtxzrXhJupZBOwp5uU2ZCBZC2UcyGt4jOqkLOmkFoQZDZD'])) {
 		header('Location: login.php');
 		exit();
 	}
@@ -43,8 +43,11 @@
 						<tr>
 							<td>Email</td>
 							<td><?php echo $_SESSION['userData']['email'] ?></td>
-							<td><?php echo $_SESSION['userData']['gender'] ?></td>
-						</tr>						
+						</tr>
+						<tr><td>Gender</td>
+						<td><?php echo $_SESSION['userData']['gender']?></td>
+						</tr>
+						
 					</tbody>
 				</table>
 			</div>

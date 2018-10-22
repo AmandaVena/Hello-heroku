@@ -1,14 +1,14 @@
 <?php
 	require_once "config.php";
 
-	if (isset($_SESSION['access_token'])) {
+	if (isset($_SESSION['EAAGZBKXWG8gYBABgj1jdE7mSNOjaLrXmZCRGwGGg9X8IwUqHhSZAcGFMkOIAHtERISwd4ddyHctxvUbtBIOjdMtlDWnWnnnmG7neFkS4bnl0Sf5U4iVVTHLYCeoDW98ZCZCcgkMUnJKMoZATeX2idHWP0ZAREUn2siUD2GYH1OpUaz0aAJ1tKEJZBe8ZCRF56TvJpevDJtxzrXhJupZBOwp5uU2ZCBZC2UcyGt4jOqkLOmkFoQZDZD'])) {
 		header('Location: index.php');
 		exit();
 	}
 
 	$redirectURL = "https://venatest.herokuapp.com/fb-callback.php";
-	$permissions = ['email','user_gender'];
-	//$permissions = array('email','user_birthday','user_location');
+	//$permissions = ['email'];
+$permissions = array('email','user_birthday','user_gender');
 	$loginURL = $helper->getLoginUrl($redirectURL, $permissions);
 ?>
 <!doctype html>
